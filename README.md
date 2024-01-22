@@ -1,2 +1,3 @@
 [# SolaRate-Ignition](https://www.figma.com/proto/kSdkw0qzbYIf9ERKwKOemU/SolaRate---Ignition?type=design&node-id=15-8&t=LH9BCD0vRTQd4rKE-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=12%3A41)
+
 Enter the fire of SolaRate-Ignition, where solar power ignites every aspect of development. Blaze the stages with impressive velocity and go beyond the boundaries of code in a fiery adventure towards technological excellence ✨ 
