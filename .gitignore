@@ -2,4 +2,5 @@
 *.js
 # Ignorer le dossier de sortie de la compilation TypeScript
 dist/
+node_modules
 
