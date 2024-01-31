@@ -1,20 +1,14 @@
 // vite.config.ts
 import { defineConfig } from 'vite';
-import ViteStyleImport from 'vite-plugin-style-import';
+import consola from 'consola';
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/IteRated-Ignition/' : '/',
+  base: "./",
   build: {
-    outDir: 'dist', // Dossier de sortie
+    outDir: 'dist', // Spécifie le dossier de sortie
   },
   plugins: [
-    ViteStyleImport({
-      libraryName: 'ant-design-vue',
-      libraryDirectory: 'es',
-      // Les autres options que vous souhaitez configurer
-    }),
     // ... autres plugins
   ],
-  // Autres configurations
 });
 
