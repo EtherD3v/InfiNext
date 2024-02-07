@@ -1,6 +1,3 @@
-# Ignore les fichiers JavaScript générés par TypeScript
-*.js
-
 # Ignore le dossier de sortie de la compilation TypeScript
 dist/
 
