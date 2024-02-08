@@ -1,24 +1,19 @@
-   <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>2048</title>
-    <link rel="stylesheet" href="/src/styles/main.css">
-    <script src="main.js" charset="utf-8"></script>
-  </head>
-  <body>
-
-    <div class="container">
-      <div class="info">
-        <h1>2048</h1>
-        <div class="score-container">
-          <div class="score-title">score</div>
-          <span id="score">0</span>
-        </div>
-      </div>
-      <span id="result">Join the numbers and get to the <b>2048</b> tile!</span>
-      <div class="grid"></div>
-    </div>
-
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guess the Color</title>
+<link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+<div class="container">
+  <div id="colorDisplay"></div>
+  <input type="text" id="colorInput" placeholder="Guess the Color">
+  <button onclick="checkGuess()">Check</button>
+  <p id="message"></p>
+</div>
+<script src="src/main.js"></script>
+</body>
 </html>
+
