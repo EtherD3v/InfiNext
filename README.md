@@ -6,4 +6,4 @@ Clone the repository with: <br>
 ```
 git clone https://github.com/EtherD3v/Iterated-Ignition.git
 ```
-In development ![CatTypingGIF](https://github.com/EtherD3v/IteRated-Ignition/assets/118121669/e7f26925-0905-4ea7-b2ca-e7533eb5be82)
+In development <br>![CatTypingGIF](https://github.com/EtherD3v/IteRated-Ignition/assets/118121669/e7f26925-0905-4ea7-b2ca-e7533eb5be82)
