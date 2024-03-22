@@ -1,38 +1,57 @@
-// Function to generate random color
-function randomColor() {
-  return '#' + Math.random().toString(16).substr(2, 6);
+body {
+  background-color: #0099cc;
+  color: #fff;
+
+  /* Allow mouse dragging. */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  /* disable touch panning/zooming */
+  -ms-touch-action: none;
+  touch-action: none;
+
+  /* Allow canvas to hit the edges of the browser viewport. */
+  margin: 0;
 }
 
-// Display random color
-function displayColor() {
-  var colorDisplay = document.getElementById("colorDisplay");
-  colorDisplay.style.backgroundColor = randomColor();
+#screen canvas {
+  margin: auto;
+  /* Hide the gap for font descenders. */
+  display: block;
+
+  /* disable scaling interpolation */
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
-// Check if guess is correct
-function checkGuess() {
-  var colorDisplay = document.getElementById("colorDisplay");
-  var guessedColor = document.getElementById("colorInput").value.toLowerCase();
-  var actualColor = colorDisplay.style.backgroundColor;
-  if (guessedColor === actualColor) {
-    setMessage("Correct! 🎉", "green");
-  } else {
-    setMessage("Incorrect! Try again.", "red");
-  }
+#share {
+  margin: 10px auto;
+  text-align: center;
 }
 
-// Set message
-function setMessage(msg, color) {
-  var message = document.getElementById("message");
-  message.textContent = msg;
-  message.style.color = color;
+#share .fb-share-button iframe {
+  margin-top: -4px;
 }
 
-// Initialize game
-function initGame() {
-  displayColor();
+@font-face {
+  font-family: 'gamefont';
+  src: url('data/css/gamefont.eot');
+  src: url('data/css/gamefont.eot?#iefix') format('embedded-opentype'),
+     url('data/css/gamefont.woff') format('woff'),
+     url('data/css/gamefont.ttf') format('truetype'),
+     url('data/css/gamefont.svg#gamefont') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-// Run initGame when page loads
-window.onload = initGame;
-
+.google {
+  position: absolute;
+  left:23%;
+}

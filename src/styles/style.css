@@ -1,46 +1,57 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-}
-
-.container {
-  max-width: 400px;
-  margin: 50px auto;
-  text-align: center;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-#colorDisplay {
-  width: 200px;
-  height: 200px;
-  margin: 20px auto;
-  border-radius: 5px;
-}
-
-#colorInput {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #0099cc;
   color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+
+  /* Allow mouse dragging. */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  /* disable touch panning/zooming */
+  -ms-touch-action: none;
+  touch-action: none;
+
+  /* Allow canvas to hit the edges of the browser viewport. */
+  margin: 0;
 }
 
-button:hover {
-  background-color: #0056b3;
+#screen canvas {
+  margin: auto;
+  /* Hide the gap for font descenders. */
+  display: block;
+
+  /* disable scaling interpolation */
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
 }
 
-#message {
-  margin-top: 10px;
-  font-weight: bold;
+#share {
+  margin: 10px auto;
+  text-align: center;
 }
 
+#share .fb-share-button iframe {
+  margin-top: -4px;
+}
+
+@font-face {
+  font-family: 'gamefont';
+  src: url('data/css/gamefont.eot');
+  src: url('data/css/gamefont.eot?#iefix') format('embedded-opentype'),
+     url('data/css/gamefont.woff') format('woff'),
+     url('data/css/gamefont.ttf') format('truetype'),
+     url('data/css/gamefont.svg#gamefont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.google {
+  position: absolute;
+  left:23%;
+}
