@@ -6,4 +6,5 @@ Clone the repository with: <br>
 ```
 git clone https://github.com/EtherD3v/Iteratio-Ignition.git
 ```
-In development <br>![CatTypingGIF](https://github.com/EtherD3v/IteRatio-Ignition/assets/118121669/e7f26925-0905-4ea7-b2ca-e7533eb5be82)
+Beta in development ! 👨🏼‍💻 <br>
+![EtherD3v-video (1)](https://github.com/EtherD3v/EtherD3v/assets/118121669/de98b414-f1d4-443c-8f35-c460c0b72794)
