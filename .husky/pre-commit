@@ -1,13 +1,14 @@
 {
-"husky": {
-"hooks": {
-"pre-commit": "lint-staged"
-}
-},
+"command": "npx lint-staged",
 "lint-staged": {
-"*.{ts,tsx}": [
-"eslint --fix --max-warnings=0"
-]
-}
+"*.{js,jsx,ts,tsx}": [
+"eslint --fix --max-warnings=0",
+],
+"*.{json,md}": [
+"prettier --write",
+],
+},
+"ignore": ["*.log"],
+"verbose": true,
 }
 
