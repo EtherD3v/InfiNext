@@ -2,9 +2,17 @@
 
 Enter the fire of IteRated-Ignition, where iterative power ignites every aspect of development. Blaze the stages with impressive velocity and go beyond the boundaries of code in a fiery adventure towards technological excellence ✨ 
 
-Clone the repository with: <br>
+<li>Clone the repository with:</li>
 ```
 git clone https://github.com/EtherD3v/Iteratio-Ignition.git
 ```
-Beta in development ! 👨🏼‍💻 <br><br>
-![EtherD3v-video (1)](https://github.com/EtherD3v/EtherD3v/assets/118121669/de98b414-f1d4-443c-8f35-c460c0b72794)
+<li>Install dependencies (make sure you installed node.js & npm)</li>
+```
+npm install
+```
+<li>.. and run the code locally !</li>
+```
+npm run dev
+```
+
+Beta in development ! 👨🏼‍💻

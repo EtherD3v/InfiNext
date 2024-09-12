@@ -1,6 +1,2 @@
-# Ignore le dossier de sortie de la compilation TypeScript
-dist/
-
-# Ignore le répertoire node_modules
-node_modules/
+node_modules
 
