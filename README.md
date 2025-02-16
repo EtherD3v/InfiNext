@@ -15,4 +15,4 @@ npm i
 npm run dev
 ```
 
-Beta in development ! 👨🏼‍💻
+Beta in development ! 
