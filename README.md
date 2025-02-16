@@ -1,3 +1,5 @@
+# Beta in development ! 
+
 <li>Clone the repository with:</li>
 
 ```bash
@@ -14,5 +16,3 @@ npm i
 ```bash
 npm run dev
 ```
-
-Beta in development ! 
