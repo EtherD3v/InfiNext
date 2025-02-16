@@ -1,4 +1,4 @@
-A game inspired by NotNot by AltShift.
+A game inspired by Not Not by AltShift.
  
 # User manual
 
