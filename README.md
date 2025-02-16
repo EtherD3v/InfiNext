@@ -1,7 +1,3 @@
-A game inspired by Not Not by AltShift.
- 
-# User manual
-
 <li>Clone the repository with:</li>
 
 ```bash
