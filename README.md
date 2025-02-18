@@ -1,5 +1,7 @@
 # Beta in development ! 
 
+![alt text](https://github.com/EtherD3v/InfiNext/blob/main/public/img/InfiNext.png)
+
 <li>Clone the repository with:</li>
 
 ```bash
