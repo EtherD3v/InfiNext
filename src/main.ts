@@ -1,7 +1,7 @@
-import './style.css'
-import typescriptLogo from '../public/svg/typescript.svg'
-import viteLogo from '../public/svg/vite.svg'
-import { setupCounter } from './counter.ts'
+import './styles/style.css'
+import typescriptLogo from './svg/typescript.svg'
+import viteLogo from './svg/vite.svg'
+import { setupCounter } from './components/counter.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>

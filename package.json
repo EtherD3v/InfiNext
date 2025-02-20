@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "prepare": "husky install",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "commitlint": "commitlint"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
