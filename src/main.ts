@@ -1,14 +1,24 @@
-export {};
+import './style.css'
+import typescriptLogo from '../public/svg/typescript.svg'
+import viteLogo from '../public/svg/vite.svg'
+import { setupCounter } from './counter.ts'
 
-const gameProperties = {
-	"Name": "IteRatio-Ignition",
-	"Developer": "EtherD3v",
-	"Language": "english",
-	"MainCode": "TypeScript",
-	"Type": "game-development",
-	"Shift": "linear",
-	"DimensionView": "2D"
-}
+document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+  <div>
+    <a href="https://vite.dev" target="_blank">
+      <img src="${viteLogo}" class="logo" alt="Vite logo" />
+    </a>
+    <a href="https://www.typescriptlang.org/" target="_blank">
+      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
+    </a>
+    <h1>Vite + TypeScript</h1>
+    <div class="card">
+      <button id="counter" type="button"></button>
+    </div>
+    <p class="read-the-docs">
+      Click on the Vite and TypeScript logos to learn more
+    </p>
+  </div>
+`
 
-
-
+setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)

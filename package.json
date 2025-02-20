@@ -1,46 +1,35 @@
 {
-  "name": "IteRated-Ignition",
+  "name": "infinext",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "tsc && vite build",
     "preview": "vite preview",
-    "build": "npm run clean && tsc --project tsconfig.json && npm run vite-build",
-    "vite-build": "vite build",
-    "clean": "rm -rf dist",
-    "deploy": "npm run clean && npm run build && gh-pages -d dist -b gh-pages",
-    "prepare": "husky",
-    "pre-commit": "npx lint-staged"
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "eslint --fix --max-warnings=0"
-    ]
+    "prepare": "husky install",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "devDependencies": {
-    "@eslint/js": "^9.10.0",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
-    "consola": "^3.2.3",
-    "esbuild": "^0.19.12",
-    "eslint": "^9.10.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-typescript": "^18.0.0",
-    "eslint-plugin-import": "^2.30.0",
-    "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-react": "^7.36.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "gh-pages": "^6.1.1",
-    "globals": "^15.9.0",
-    "husky": "^9.1.6",
-    "lint-staged": "^15.2.10",
-    "typescript": "^4.6.3",
-    "typescript-eslint": "^8.5.0",
-    "vite": "^5.0.12",
-    "vite-plugin-style-import": "^2.0.0"
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^15.15.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.1",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.1.0"
   },
-  "dependencies": {
-    "nvm": "0.0.4"
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.jsx": "eslint --fix",
+    "*.ts": "eslint --fix",
+    "*.tsx": "eslint --fix"
   }
 }

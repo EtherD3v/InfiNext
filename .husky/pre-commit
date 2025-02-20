@@ -1,14 +1,5 @@
-{
-"command": "npx lint-staged",
-"lint-staged": {
-"*.{js,jsx,ts,tsx}": [
-"eslint --fix --max-warnings=0",
-],
-"*.{json,md}": [
-"prettier --write",
-],
-},
-"ignore": ["*.log"],
-"verbose": true,
-}
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
+npx lint-staged
+npx --no-install commitlint --edit $1
