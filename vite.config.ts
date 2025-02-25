@@ -1,6 +1,5 @@
 // vite.config.ts
 import { defineConfig } from 'vite';
-import consola from 'consola';
 
 export default defineConfig({
   base: "./",
