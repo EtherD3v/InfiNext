@@ -1,7 +1,7 @@
 // components/player.ts
 
 /** Player Management
- * D1 (18/05/2025) : feat & chore => enable movement / restriction inside cube
+ * D1 (18/05/2025) : feat & chore => enable movement / restrictions inside cube
 **/
 
 type ArrowKey = 'ArrowUp' | 'ArrowDown' | 'ArrowLeft' | 'ArrowRight';
