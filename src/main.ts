@@ -1,24 +1,20 @@
 import './styles/style.css'
-import typescriptLogo from './svg/typescript.svg'
-import viteLogo from './svg/vite.svg'
-import { setupCounter } from './components/counter.ts'
+import { setupPlayer } from './components/player.ts'
 
+// Insertion de HTML dans le DOM
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+    <div id="thecube">
+      <div id="theplayer"></div>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more 
-    </p>
   </div>
 `
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+// Appel de la fonction setupPlayer pour attacher l'événement
+const player = document.querySelector<HTMLDivElement>('#theplayer');
+if (player) {
+  setupPlayer(player);  // On passe l'élément #theplayer à la fonction setupPlayer
+} else {
+  console.error("L'élément #theplayer n'a pas été trouvé !");
+}
+
