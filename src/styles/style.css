@@ -116,3 +116,18 @@ button:focus-visible {
   width: 20px;
   background: yellow;
 }
+
+.animate {
+  animation: move .75s ease forwards;
+}
+
+@keyframes move {
+  30%{
+    transform: translate(var(--move-x), var(--move-y));
+    opacity: 0;
+  }
+  50%{
+    transform: translate(calc(-1 * var(--move-x)), calc(-1 * var(--move-y)));
+    opacity: 0;
+  }
+}
