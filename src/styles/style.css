@@ -118,7 +118,7 @@ button:focus-visible {
 }
 
 .animate {
-  animation: move .75s ease forwards;
+  animation: move .5s ease-in-out forwards;
 }
 
 @keyframes move {
