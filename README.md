@@ -1,20 +1,21 @@
-# Beta in development ! 
+# Beta in development !
 
-![alt text](https://github.com/EtherD3v/InfiNext/blob/main/public/img/InfiNext.png)
+![alt text](https://github.com/etherd3v/infinext/blob/main/public/img/infinext.png)
 
-<li>Clone the repository with:</li>
+<li>clone the repository with:</li>
 
 ```bash
-git clone https://github.com/EtherD3v/Iteratio-Ignition.git
+git clone https://github.com/etherd3v/iteratio-ignition.git
 ```
 
-<li>Install dependencies (make sure you installed node.js & npm)</li>
+<li>install dependencies (make sure you installed node.js & npm)</li>
 
 ```bash
 npm i
 ```
+
 <li>.. and run the code locally !</li>
 
 ```bash
 npm run dev
-```
+```Betaindevelopmentalttexthttps

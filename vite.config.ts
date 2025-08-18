@@ -1,13 +1,10 @@
 // vite.config.ts
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
+import ghPages from "vite-plugin-gh-pages";
 
 export default defineConfig({
-  base: "./",
+  plugins: [ghPages],
   build: {
-    outDir: 'dist', // Spécifie le dossier de sortie
+    outDir: "dist", 
   },
-  plugins: [
-    // ... autres plugins
-  ],
-});
-
+ });

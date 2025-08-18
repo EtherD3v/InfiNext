@@ -5,32 +5,27 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
-    "prepare": "husky install",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "commitlint": "commitlint"
+    "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
+    "format": "prettier --write ."
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.7.1",
-    "@commitlint/config-conventional": "^19.7.1",
-    "@eslint/js": "^9.20.0",
-    "eslint": "^9.20.1",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-prettier": "^5.2.3",
-    "globals": "^15.15.0",
-    "husky": "^8.0.0",
-    "lint-staged": "^15.4.3",
-    "prettier": "^3.5.1",
-    "typescript": "~5.7.2",
-    "typescript-eslint": "^8.24.1",
-    "vite": "^6.3.2"
+    "vite-plugin-gh-pages": "^1.0.1",
+    "vite": "^4.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "stylelint": "^15.0.0"
   },
   "lint-staged": {
-    "*.js": "eslint --fix",
-    "*.jsx": "eslint --fix",
-    "*.ts": "eslint --fix",
-    "*.tsx": "eslint --fix"
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.css": [
+      "stylelint --fix"
+    ]
   }
 }
+
