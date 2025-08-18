@@ -26,7 +26,7 @@ export function setupPlayer(): void {
 
   document.addEventListener("keydown", (event: KeyboardEvent) => {
     const eventKey: string = event.key;
-    canAnimate = Object.has(events, eventKey) ? true : false;
+    canAnimate = events.hasOwnProperty(eventKey) ? true : false;
 
     if (canAnimate && !isAnimated) {
       player.style.setProperty("--move-x", `${events[eventKey][0]}px`);
