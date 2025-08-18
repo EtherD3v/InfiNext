@@ -7,7 +7,7 @@ import prettier from "eslint-plugin-prettier";
 export default [
   js.configs.recommended,
   {
-    files: ["src/**/*.ts", "src/**/*.tsx"],
+    files: ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js"],
     languageOptions: {
       parser: tsParser,
       parserOptions: {
@@ -53,4 +53,3 @@ export default [
     },
   },
 ];
-

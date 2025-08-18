@@ -16,6 +16,8 @@ npm i
 
 <li>.. and run the code locally !</li>
 
-```bash
+`````bash
 npm run dev
-```Betaindevelopmentalttexthttps
+```betaindevelopmentalttexthttpsbetaindevelopmentalttexthttpsbetaindevelopmentalttexthttpsbetaindevelopmentalttexthttps
+````Betaindevelopmentalttexthttps
+`````

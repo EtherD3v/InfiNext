@@ -5,6 +5,6 @@ import ghPages from "vite-plugin-gh-pages";
 export default defineConfig({
   plugins: [ghPages],
   build: {
-    outDir: "dist", 
+    outDir: "dist",
   },
- });
+});
