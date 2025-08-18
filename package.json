@@ -206,11 +206,11 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "prettier --write . && npx eslint . --fix && npx stylelint '**/*css' --fix && vite build",
+    "fix": "prettier --write . && npx eslint . --fix && npx stylelint '**/*css' --fix npx tsc && git add .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "vite build && git checkout --orphan gh-pages && git --work-tree dist add --all && git --work-tree dist commit -m 'Deploy' && git push origin HEAD:gh-pages --force && rm -rf dist && git checkout -"
   },
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/EtherD3v/InfiNext.git"
   },
