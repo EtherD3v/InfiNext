@@ -1,5 +1,5 @@
-# Beta in development !
+# InfiNext Lab :)
 
-![alt text](https://github.com/etherd3v/infinext/tree/main/public/img/infinext.png)
+![alt text](https://github.com/EtherD3v/InfiNext/blob/develop/public/img/InfiNext.png)
 
 

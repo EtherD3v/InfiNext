@@ -208,7 +208,8 @@
     "dev": "vite",
     "fix": "prettier --write",
     "preview": "vite preview",
-    "deploy": "vite build && git checkout gh-pages && git rm -rf . && cp -r dist/* . && rm -rf dist && git add . && git commit -m 'Deploy build' && git push origin gh-pages && git checkout -"
+    "build": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
