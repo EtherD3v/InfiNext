@@ -9,11 +9,13 @@
 
 body {
   margin: 0;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
   background: var(--bg);
+  font-family: Arial;
 }
 
 #app {
@@ -22,6 +24,16 @@ body {
   padding: 2rem;
   text-align: center;
 }
+
+info {
+  font-size: 1.5rem;
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+  border-bottom: solid .3rem #38bdf8;
+  padding: .5rem 0;
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -32,23 +44,25 @@ body {
 /* Active css components */
 
 #score-board {
-  position: absolute;
+  position: relative;
   display: grid;
   place-items: center;
-  top: 7.5rem;
   left: calc(50% - 5rem);
   height: 3rem;
-  width: 10rem;
-  background: gray;
+  width: 10rem;;
+  background: transparent;
   border: solid orange 2px;
   font-size: 2rem;
   padding: 0.1rem;
+  border-radius: .5rem;
+  color: #FFF;
 }
 
 #thecube {
   position: relative;
   height: 20rem;
   width: 20rem;
+  margin: 5.5rem;
   background: #fff;
   display: flex;
   justify-content: center;

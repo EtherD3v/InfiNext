@@ -13,7 +13,10 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
       <div class="portal"></div>
       <div class="portal"></div>
     </div> 
-  </div>
+  
+    <info>Use Arrow keys to move</info> 
+
+</div>
 `;
 
 // Let's go !
